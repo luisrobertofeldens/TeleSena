@@ -6,5 +6,9 @@ public class Testes {
 
         System.out.println(Arrays.toString(t.getNumeros1()));
         System.out.println(Arrays.toString(t.getNumeros2()));
+
+        Pessoa primeiro = new Pessoa();
+
+        System.out.println(primeiro.getNome());
     }
 }

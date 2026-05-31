@@ -3,16 +3,16 @@ public class TeleSena {
     private int[] numeros1;
     private int[] numeros2;
 
-    public int[] gerarSorteio(){
+    public int[] gerarSorteio() {
         int[] sorteados = new int[25];
         int n;
         boolean repetido;
         for (int i = 0; i < sorteados.length; i++) {
             do {
-                n = (int)(Math.random() * 60 + 1);
+                n = (int) (Math.random() * 60 + 1);
                 repetido = false;
                 for (int j = 0; j < i; j++) {
-                    if(n == sorteados[j]){
+                    if (n == sorteados[j]) {
                         repetido = true;
                         break;
                     }
@@ -21,19 +21,20 @@ public class TeleSena {
             sorteados[i] = n;
 
         }
-            return sorteados;
+        return sorteados;
     }
 
-    public TeleSena(){
+    public TeleSena() {
         this.numeros1 = gerarSorteio();
         this.numeros2 = gerarSorteio();
 
     }
 
-    public int[] getNumeros1(){
+    public int[] getNumeros1() {
         return numeros1;
     }
-    public int[] getNumeros2(){
+
+    public int[] getNumeros2() {
         return numeros2;
     }
 
