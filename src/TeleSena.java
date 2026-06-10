@@ -1,4 +1,5 @@
 public class TeleSena {
+    int nCertos = 0;
     final int preço = 10;
     private int[] numeros1;
     private int[] numeros2;
@@ -37,5 +38,5 @@ public class TeleSena {
     public int[] getNumeros2() {
         return numeros2;
     }
-
+    
 }
