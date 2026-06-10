@@ -14,9 +14,6 @@ public class Principal {
         try{
             Thread.sleep(800);
         }catch(Exception e){}
-        
-
-        System.out.println();
 
         System.out.println("Calculando Prêmio");
 
@@ -44,6 +41,7 @@ public class Principal {
         System.out.println();
 
         teste.exibirNumerosFinais();
+
     }
 
 }
